@@ -1,0 +1,84 @@
+##
+#   ADesk Bar - Quick application launcher
+#
+#   Created by
+#       ADcomp <david.madbox@gmail.com>
+#       https://launchpad.net/adeskbar
+#       http://www.ad-comp.be/
+#
+#   This program is distributed under the terms of the GNU General Public License
+#   For more info see http://www.gnu.org/licenses/gpl.txt
+#
+##
+
+to launch AdeskBar :
+adeskbar <config_file>
+
+Config files : ~/.config/adeskbar/
+Install dir : /usr/share/adeskbar/
+Log file : ~/.config/adeskbar/output.log
+
+---
+
+Install
+-------
+
+sudo ./install.sh
+or
+su -c "./install.sh"
+
+unInstall
+---------
+
+sudo ./uninstall.sh
+or
+su -c "./uninstall.sh"
+
+
+---
+
+Create .deb package for Debian / Ubuntu
+
+sudo ./make_deb.sh
+or
+su -c "./make_deb.sh"
+
+---
+
+Dependencies
+------------
+
+python , python-gtk2 , python-cairo  , python-gmenu ( usually already installed )
+
+optional : python-dbus
+
+plugin : 
+
+    - python-wnck :         tasklist/showdesktop
+    - python-alsaaudio :    volume  ( python-pyalsaaudio on Arch / Slitaz )
+    - python-vte :          terminal
+    - python-xlib :         systray
+
+for Debian / Ubuntu :
+
+    sudo apt-get install python-wnck python-alsaaudio python-vte python-xlib python-dbus
+
+
+Web
+---
+
+blog :
+http://www.ad-comp.be/?category/ADesk-Bar
+
+archlinux :
+http://bbs.archlinux.org/viewtopic.php?pid=589980
+
+crunchbanglinux :
+http://crunchbanglinux.org/forums/topic/441/little-application-launcher-for-openbox/
+
+ubuntu-fr :
+http://forum.ubuntu-fr.org/viewtopic.php?id=280349
+
+zenwalk :
+http://support.zenwalk.org/viewtopic.php?f=36&t=25633&start=0
+
